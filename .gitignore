@@ -1,0 +1,7 @@
+/Mojolicious-Plugin-Leafletjs-*
+/.build
+/_build*
+/Build
+MYMETA.*
+!META.json
+/.prove
