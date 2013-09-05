@@ -1,14 +1,30 @@
 # NAME
 
-Mojolicious::Plugin::Leafletjs - Blah blah blah
+Mojolicious::Plugin::Leafletjs - A Mojolicious Plugin
 
 # SYNOPSIS
 
-    use Mojolicious::Plugin::Leafletjs;
+\# Mojolicious
+$self->plugin(
+    'Leafletjs' => {
+        longitude => '75',
+        latitude  => '-0.5'
+    }
+);
+
+\# Mojolicious::Lite
+plugin 'Leafletjs',
+  { longitude => '75',
+    latitude  => '-0.5'
+  };
+
+\# In your template
+<%= leaflet %>
+<%= leaflet\_marker 'marker1', '75.02', '-35.02' %>
 
 # DESCRIPTION
 
-Mojolicious::Plugin::Leafletjs is
+Mojolicious::Plugin::Leafletjs is helpers for integrating simple maps via leafletjs
 
 # AUTHOR
 

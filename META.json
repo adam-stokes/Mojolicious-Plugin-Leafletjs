@@ -1,5 +1,5 @@
 {
-   "abstract" : "Blah blah blah",
+   "abstract" : "A Mojolicious Plugin",
    "author" : [
       "Adam Stokes <adamjs@cpan.org>"
    ],
@@ -46,6 +46,20 @@
       }
    },
    "release_status" : "stable",
-   "version" : "0.01"
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/battlemidget/Mojolicious-Plugin-Leafletjs/issues"
+      },
+      "homepage" : "https://github.com/battlemidget/Mojolicious-Plugin-Leafletjs",
+      "repository" : {
+         "type" : "git",
+         "url" : "https://github.com/battlemidget/Mojolicious-Plugin-Leafletjs.git",
+         "web" : "https://github.com/battlemidget/Mojolicious-Plugin-Leafletjs"
+      }
+   },
+   "version" : "0.001",
+   "x_contributors" : [
+      "Adam Stokes <adam.stokes@ubuntu.com>"
+   ]
 }
 
