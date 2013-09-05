@@ -5,7 +5,7 @@ use File::Basename 'dirname';
 use File::Spec::Functions 'catdir';
 use File::ShareDir ':ALL';
 
-our $VERSION = '0.001';
+our $VERSION = '0.002';
 
 my %defaults = (
     name      => 'map',

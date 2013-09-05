@@ -4,23 +4,22 @@ Mojolicious::Plugin::Leafletjs - A Mojolicious Plugin
 
 # SYNOPSIS
 
-\# Mojolicious
-$self->plugin(
-    'Leafletjs' => {
-        longitude => '75',
-        latitude  => '-0.5'
-    }
-);
+    # Mojolicious
+    $self->plugin(
+      'Leafletjs' => {
+          longitude => '75',
+          latitude  => '-0.5'
+      }
+    );
 
-\# Mojolicious::Lite
-plugin 'Leafletjs',
-  { longitude => '75',
-    latitude  => '-0.5'
-  };
-
-\# In your template
-  <%= leaflet %>
-  <%= leaflet\_marker 'marker1', '75.02', '-35.02' %>
+    # Mojolicious::Lite
+    plugin 'Leafletjs',
+    { longitude => '75',
+      latitude  => '-0.5'
+    };
+    # In your template
+    <%= leaflet %>
+    <%= leaflet_marker 'marker1', '75.02', '-35.02' %>
 
 # DESCRIPTION
 
@@ -30,35 +29,76 @@ Mojolicious::Plugin::Leafletjs is helpers for integrating simple maps via leafle
 
 ## __leaflet__
 
-Accepts the following key/value:
+Accepts the following options:
 
-- name => 'map'
-- div  => 'map'
-- longitude => undef (\*)
-- latitude  => undef (\*)
-- zoomLevel => 13
-- tileLayer => 'map tile png'
-- maxZoom => 18
-- attribution => 'copyright'
+- name
 
-\* Is required
+    Name of map variable
+
+- longitude
+
+    Longitude
+
+- latitude
+
+    Latidude
+
+- cssid
+
+    CSS id of map
+
+- zoomLevel
+
+    Map zoomlevel
+
+- tileLayer
+
+    URL of map tile layer, defaults to a cloudmade.com tile
+
+- maxZoom
+
+    Max zoom into the map
+
+- attribution
+
+    Show some love for the leaflet team, openmap, and cloudmade map tiles
 
 ## __leaflet\_marker__
 
 Accepts the following positional arguments:
 
-- marker\_name(\*)
-- longitude(\*)
-- latitude(\*)
-- parent\_map(defaults to 'map')
+- marker\_name
 
-\* Is required
+    Name of Map variable
+
+- longitude
+
+    Longitude
+
+- latitude
+
+    Latitude
+
+- parent\_map
+
+    Map variable
+
+## __leaflet\_popup__
+
+Accepts the following positional arguments:
+
+- marker\_name
+
+    Variable name of marker
+
+- message
+
+    Message to display in popup
 
 # TODO
 
 - Add circles
 - Add polygons
-- Add popups
 
 # CONTRIBUTIONS
 
