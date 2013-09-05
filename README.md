@@ -63,37 +63,25 @@ Accepts the following options:
 
     Show some love for the leaflet team, openmap, and cloudmade map tiles
 
-## __leaflet\_marker__
+- markers
 
-Accepts the following positional arguments:
+    Array of hashes containing the following key/value:
 
-- marker\_name
+    - name
 
-    Name of Map variable
+        Marker name
 
-- longitude
+    - longitude
 
-    Longitude
+        Longitude
 
-- latitude
+    - latitude
 
-    Latitude
+        Latitude
 
-- parent\_map
+    - popup
 
-    Map variable
-
-## __leaflet\_popup__
-
-Accepts the following positional arguments:
-
-- marker\_name
-
-    Variable name of marker
-
-- message
-
-    Message to display in popup
+        A popup message
 
 # TODO
 
