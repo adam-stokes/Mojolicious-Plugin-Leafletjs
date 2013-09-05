@@ -5,21 +5,31 @@ Mojolicious::Plugin::Leafletjs - A Mojolicious Plugin
 # SYNOPSIS
 
     # Mojolicious
-    $self->plugin(
-      'Leafletjs' => {
-          longitude => '75',
-          latitude  => '-0.5'
-      }
-    );
+    $self->plugin('Leafletjs');
 
     # Mojolicious::Lite
-    plugin 'Leafletjs',
-    { longitude => '75',
-      latitude  => '-0.5'
-    };
+    plugin 'Leafletjs';
+
     # In your template
-    <%= leaflet %>
-    <%= leaflet_marker 'marker1', '75.02', '-35.02' %>
+    <%= leaflet {
+      name      => 'map1',
+      latitude => '35.9239',
+      longitude  => '-78.4611',
+      zoomLevel => 18,
+      markers   => [
+        {   name      => 'marker1',
+            latitude => '35.9239',
+            longitude  => '-78.4611',
+            popup     => 'A new message tada!',
+        },
+        {   name      => 'marker2',
+            latitude => '35.9235',
+            longitude  => '-78.4610',
+            popup     => 'A second popup here!',
+        }
+      ],
+    }
+    %>
 
 # DESCRIPTION
 
@@ -83,9 +93,40 @@ Accepts the following options:
 
         A popup message
 
+- circles
+
+    Array of hashes containing the following key/value
+
+    - name
+
+        Name of circle variable
+
+    - longitude
+
+        longitude
+
+    - latitude
+
+        latitude
+
+    - color
+
+        circle color
+
+    - fillColor
+
+        circle fill color
+
+    - fillOpacity
+
+        circle opacity
+
+    - radius
+
+        radius of circle in meters
+
 # TODO
 
-- Add circles
 - Add polygons
 
 # CONTRIBUTIONS
