@@ -1,4 +1,8 @@
 Revision history for Mojolicious-Plugin-Leafletjs
 
 {{$NEXT}}
+
+0.001  2013-09-04 22:31:24 EDT
         - Initial release
+        - Supports creating a map
+        - Supports adding markers
