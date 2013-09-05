@@ -107,7 +107,7 @@ __DATA__
   % foreach my $marker (@{$attrs->{markers}}) {
     var <%= $marker->{name} %> = L.marker([<%= $marker->{latitude} %>, <%= $marker->{longitude} %>]).addTo(<%= $attrs->{name} %>);
     % if ($marker->{popup}) {
-      <%= $marker->{name} %>.bindPopup("<%= $marker->{popup} %>");
+      <%= $marker->{name} %>.bindPopup("<%== $marker->{popup} %>");
     % }
   % }
 % }
