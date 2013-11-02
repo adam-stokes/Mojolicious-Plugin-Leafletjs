@@ -147,3 +147,7 @@ This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.
 
 # SEE ALSO
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/battlemidget/mojolicious-plugin-leafletjs/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
